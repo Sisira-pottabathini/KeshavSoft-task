@@ -81,11 +81,7 @@ Contact - Contact information, contact form
 
 Build Process
 The build process:
-
 Compiles Nunjucks templates into static HTML
-
 Processes custom CSS and JavaScript
-
 Generates optimized production files in /dist folder
-
 Maintains Bootstrap 5 CDN dependencies
