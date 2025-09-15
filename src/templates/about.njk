@@ -1,0 +1,69 @@
+{% extends "base.njk" %}
+
+{% block title %}About Us - Bootstrap 5 Website{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1>About Our Company</h1>
+                <p class="lead">We've been helping businesses succeed for over 10 years</p>
+            </div>
+            <div class="col-lg-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-lg-end">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2>Our Story</h2>
+                <p>Founded in 2014, our company started as a small web design studio with just three people. Today, we're a full-service digital agency with over 50 employees serving clients worldwide.</p>
+                <p>Our mission is to help businesses of all sizes leverage the power of digital technology to grow and succeed in an increasingly competitive marketplace.</p>
+                <a href="contact.html" class="btn btn-primary mt-3">Get in Touch</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Our Team" class="img-fluid rounded">
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-5">Our Values</h2>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="bg-light p-4 rounded">
+                    <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
+                    <h3>Innovation</h3>
+                    <p>We stay on top of industry trends and continuously explore new technologies to deliver cutting-edge solutions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="bg-light p-4 rounded">
+                    <i class="bi bi-people fs-1 text-primary mb-3"></i>
+                    <h3>Collaboration</h3>
+                    <p>We work closely with our clients, understanding their needs and goals to deliver the best possible results.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="bg-light p-4 rounded">
+                    <i class="bi bi-award fs-1 text-primary mb-3"></i>
+                    <h3>Excellence</h3>
+                    <p>We're committed to delivering high-quality work that exceeds expectations and drives measurable results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
