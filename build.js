@@ -2,7 +2,6 @@ const nunjucks = require('nunjucks');
 const fs = require('fs');
 const path = require('path');
 
-// Configure Nunjucks
 const env = nunjucks.configure('src/templates', {
   autoescape: false,
   noCache: true,
@@ -10,7 +9,6 @@ const env = nunjucks.configure('src/templates', {
   lstripBlocks: true
 });
 
-// Data to pass to templates
 const siteData = {
   siteName: "Company",
   year: "2025",
@@ -19,14 +17,12 @@ const siteData = {
   address: "Hyderabad, India"
 };
 
-// Pages to render
 const pages = [
   { template: 'index.njk', output: 'index.html' },
   { template: 'about.njk', output: 'about.html' },
   { template: 'contact.njk', output: 'contact.html' }
 ];
 
-// Function to copy directory recursively
 function copyDir(src, dest) {
   if (!fs.existsSync(dest)) {
     fs.mkdirSync(dest, { recursive: true });
@@ -46,12 +42,10 @@ function copyDir(src, dest) {
   }
 }
 
-// Ensure dist directory exists
 if (!fs.existsSync('dist')) {
   fs.mkdirSync('dist', { recursive: true });
 }
 
-// Render all pages
 pages.forEach(page => {
   try {
     const output = env.render(page.template, siteData);
@@ -62,7 +56,6 @@ pages.forEach(page => {
   }
 });
 
-// Copy assets
 if (fs.existsSync('src/assets')) {
   copyDir('src/assets', 'dist/assets');
   console.log('✓ Assets copied successfully');
