@@ -1,5 +1,7 @@
 Website Link: https://vite-nunjucks-project.netlify.app/
 
+Completion Time: 1.5 hours
+
 Project Overview
 
 This project recreates the Bootstrap 5 website from Task 1 using the mandated technology stack of Vite (bundler) and Nunjucks (templating engine). 
